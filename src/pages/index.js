@@ -1,19 +1,57 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import styled from "styled-components"
 
-const ColorH1 = styled.h1`
-  color: #15b04b;
-`
+import { Css3 } from "@styled-icons/boxicons-logos/Css3"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <ColorH1>
-      <h1>Home</h1>
-    </ColorH1>
-  </Layout>
-)
+import PostItem from "../components/PostItem"
+
+const IndexPage = () => {
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query PostList {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              category
+              color
+              date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
+              description
+              title
+            }
+            timeToRead
+          }
+        }
+      }
+    }
+  `)
+
+  const postList = allMarkdownRemark.edges
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      {postList.map(
+        ({
+          node: {
+            frontmatter: { category, color, date, title, description },
+            timeToRead,
+          },
+        }) => (
+          <PostItem
+            slug="/about/"
+            color={color}
+            category={category}
+            date={date}
+            timeToRead={timeToRead}
+            title={title}
+            description={description}
+          />
+        )
+      )}
+    </Layout>
+  )
+}
 
 export default IndexPage

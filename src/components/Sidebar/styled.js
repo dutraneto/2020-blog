@@ -6,12 +6,12 @@ export const SidebarWrapper = styled.aside`
   background: var(--color-background);
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
+  margin: 2rem 1.5rem;
   position: fixed;
   padding: 2rem;
   text-align: center;
-  width: 10rem;
-  margin: 1rem;
+  width: 13rem;
   box-shadow: 5px 5px 10px #090909, -5px -5px 10px #232523;
   border-radius: 50px;
 `
