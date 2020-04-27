@@ -7,7 +7,8 @@ export const PostItemLink = styled(Link)`
   display: flex;
   text-decoration: none;
   transition: color 0.5s;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   &:hover {
     color: ${props => props.color};
@@ -20,6 +21,10 @@ export const PostItemWrapper = styled.section`
   border-bottom: 2px dashed var(--color-green);
   padding: 2rem 3rem;
   width: 100%;
+
+  &:hover {
+    border-bottom: 2px dashed ${props => props.color};
+  }
 `
 
 export const PostItemTag = styled.div`

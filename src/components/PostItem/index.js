@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import * as S from "./styled"
+import Icons from "./icons"
 
 const PostItem = ({
   slug,
@@ -11,12 +12,9 @@ const PostItem = ({
   title,
   description,
 }) => {
-  const TagName = category
+  const TagName = Icons[category]
   return (
-    <S.PostItemLink
-      to={slug}
-      color={color}
-    >
+    <S.PostItemLink to={slug} color={color}>
       <S.PostItemWrapper>
         <S.PostItemTag color={color}>
           <TagName />

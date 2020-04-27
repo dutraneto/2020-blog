@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
-import { Css3 } from "@styled-icons/boxicons-logos/Css3"
+// import { Css3 } from "@styled-icons/boxicons-logos/Css3"
 
 import PostItem from "../components/PostItem"
 
@@ -28,7 +28,6 @@ const IndexPage = () => {
   `)
 
   const postList = allMarkdownRemark.edges
-
   return (
     <Layout>
       <SEO title="Home" />
