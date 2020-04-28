@@ -3,9 +3,9 @@ import { Linkedin } from "@styled-icons/feather/Linkedin"
 import { Gitlab } from "@styled-icons/feather/Gitlab"
 
 const Icons = {
-    Github,
-    Linkedin,
-    Gitlab
+  Github,
+  Linkedin,
+  Gitlab,
 }
 
 export default Icons

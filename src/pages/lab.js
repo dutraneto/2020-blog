@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const LabPage = () => (
   <Layout>
     <SEO title="about" />
-      <h1>Lab</h1>
+    <h1>Lab</h1>
   </Layout>
 )
 export default LabPage

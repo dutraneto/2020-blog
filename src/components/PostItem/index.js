@@ -12,12 +12,12 @@ const PostItem = ({
   title,
   description,
 }) => {
-  const TagName = Icons[category]
+  const TagIcon = Icons[category]
   return (
     <S.PostItemLink to={slug} color={color}>
       <S.PostItemWrapper>
         <S.PostItemTag color={color}>
-          <TagName />
+          <TagIcon />
         </S.PostItemTag>
         <S.PostItemInfo>
           <S.PostItemDate>
@@ -37,7 +37,7 @@ PostItem.propTypes = {
   color: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.string.isRequired,
+  timeToRead: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 }

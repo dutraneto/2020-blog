@@ -1,9 +1,9 @@
 ---
 date: 2018-09-23 01:07:28
-title: 'Realizando uma chamada assícrona utilizando a API XMLHttpRequest'
-description: 'Como utilizar a API XMLHttpRequest para executar um AJAX e obter dados de uma API REST'
+title: "Realizando uma chamada assícrona utilizando a API XMLHttpRequest"
+description: "Como utilizar a API XMLHttpRequest para executar um AJAX e obter dados de uma API REST"
 category: Javascript
-color: '#F7DF1E'
+color: "#F7DF1E"
 ---
 
 # Introdução
@@ -23,12 +23,13 @@ Criado inicialmente para atender o XML, hoje em dia o JSON é mais utilizado ten
 Sendo assim, no nosso exemplo utilizaremos uma chamada AJAX para obter dados aleatórios de uma API REST de textos bíblicos.
 
 ```html
-    <div class="box">
-        <h3>Data:
-            <span id="verse"></span>
-        </h3>
-        <button id="btn">Refresh Data</button>
-    </div>
+<div class="box">
+  <h3>
+    Data:
+    <span id="verse"></span>
+  </h3>
+  <button id="btn">Refresh Data</button>
+</div>
 ```
 
 #### Nossa encheção de linguiça.
@@ -76,38 +77,36 @@ body {
 
 ```javascript
 // our selectors
-const btn = document.querySelector('#btn');
-const span = document.querySelector('#verse');
+const btn = document.querySelector("#btn")
+const span = document.querySelector("#verse")
 
 // a new event
-btn.addEventListener('click', function() {
+btn.addEventListener("click", function() {
+  // we create an instance of XMLHttpRequest
+  let XHR = new XMLHttpRequest()
 
-	// we create an instance of XMLHttpRequest
-	let XHR = new XMLHttpRequest();
+  XHR.onreadystatechange = function() {
+    // 4 means complete or request finished and response is ready
+    if (XHR.readyState == 4 && XHR.status == 200) {
+      // JSON parse
+      let data = JSON.parse(XHR.responseText)
+      // function getData below
+      let index = getData(data)
+      console.log(`The Verse ${index.title} Says: ${index.preview}`)
+      span.innerText = `The Verse of ${index.title} Says: ${index.preview}`
+    }
+  }
+  // an exemple for calling the restful api
+  XHR.open(
+    "GET",
+    "https://api.biblia.com/v1/bible/search/LEB.txt?query=bread&mode=verse&start=0&limit=100&key=fd37d8f28e95d3be8cb4fbc37e15e18e"
+  )
+  XHR.send()
 
-	XHR.onreadystatechange = function() {
-		// 4 means complete or request finished and response is ready
-		if (XHR.readyState == 4 && XHR.status == 200) {
-		// JSON parse
-		let data = JSON.parse(XHR.responseText);
-		// function getData below
-		let index = getData(data);
-		console.log(`The Verse ${index.title} Says: ${index.preview}`);
-		span.innerText = `The Verse of ${index.title} Says: ${index.preview}`;
-		}
-	};
-	// an exemple for calling the restful api
-	XHR.open(
-		'GET',
-		'https://api.biblia.com/v1/bible/search/LEB.txt?query=bread&mode=verse&start=0&limit=100&key=fd37d8f28e95d3be8cb4fbc37e15e18e'
-	);
-	XHR.send();
-
-	function getData(data) {
-		return data.results[Math.floor(Math.random() * data.results.length)];
-	}
-});
-
+  function getData(data) {
+    return data.results[Math.floor(Math.random() * data.results.length)]
+  }
+})
 ```
 
 ### Resultado

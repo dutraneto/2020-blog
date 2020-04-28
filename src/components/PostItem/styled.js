@@ -29,8 +29,8 @@ export const PostItemWrapper = styled.section`
 
 export const PostItemTag = styled.div`
   color: ${props => props.color};
-  height: 90px;
-  width: 90px;
+  min-height: 75px;
+  min-width: 75px;
 `
 
 export const PostItemInfo = styled.div`
