@@ -8,7 +8,10 @@ export const PostItemLink = styled(Link)`
   text-decoration: none;
   transition: color 0.5s;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+
+  &:not(:last-item) {
+    margin-bottom: 1rem;
+  }
 
   &:hover {
     color: ${props => props.color};

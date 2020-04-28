@@ -111,7 +111,7 @@ btn.addEventListener("click", function() {
 
 ### Resultado
 
-![meu lindo versiculo em AJAX](assets/img/img_post/verse-ajax.png)
+![meu lindo versiculo em AJAX](/assets/images/verse-ajax.png)
 
 ### Código escrito no CodePen.io
 

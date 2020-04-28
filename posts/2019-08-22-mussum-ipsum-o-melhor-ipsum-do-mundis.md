@@ -2,8 +2,8 @@
 title: Mussum Ipsum o melhor ipsum do mundis
 description: 'Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi'
 date: '2019-08-22 08:51:23'
-category: Javascript
-color: '#B31917'
+category: Misc
+color: '#544A66'
 ---
 ## Mussum Ipsum o melhor ipsum do mundis
 

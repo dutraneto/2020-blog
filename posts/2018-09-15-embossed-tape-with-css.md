@@ -14,7 +14,7 @@ Eu aprendi a usar CSS3 há alguns meses atrás. Desde então, cada layout que eu
 
 Esses dias eu me deparei com uma daquelas fitas de plático autocolantes usadas para identificar objetos. Não estou ao certo sobre o nome em português, mas sei que em inglês chama-se [Embossed Tape](https://en.wikipedia.org/wiki/Embossing_tape).
 
-![Embossed Tape](assets/img/img_post/embossed-plastic-label.jpg)
+![Embossed Tape](/assets/images/embossed-plastic-label.jpg)
 
 Logo veio a curiosidade de saber como imitar o design da mesma fita da figura acima, utilizando CSS puro.
 
@@ -87,7 +87,7 @@ p {
 
 ### O resultado foi
 
-![My Custom Embossed Tape](assets/img/img_post/my-custom-embossed-tape.png)
+![My Custom Embossed Tape](/assets/images/my-custom-embossed-tape.png)
 
 <p data-height="265" data-theme-id="dark" data-slug-hash="LJJbby" data-default-tab="css,result" data-user="dutraneto" data-pen-title="embossed-tape" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/dutraneto/pen/LJJbby/">embossed-tape</a> by José Dutra M Neto (<a href="https://codepen.io/dutraneto">@dutraneto</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

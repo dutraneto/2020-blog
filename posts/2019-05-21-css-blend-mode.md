@@ -77,7 +77,7 @@ When you use the value **multiply** in _mix-blend-mode:multiply;_ that element i
 
 ### It's done!
 
-![Mix Blend Mode](assets/img/img_post/yellow-rose.png)
+![Mix Blend Mode](/assets/images/yellow-rose.png)
 
 ## Conclusion
 

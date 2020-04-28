@@ -12,7 +12,7 @@ const PostItem = ({
   title,
   description,
 }) => {
-  const TagIcon = Icons[category]
+  const TagIcon = category === "Misc" ? Icons.Blog : Icons[category]
   return (
     <S.PostItemLink to={slug} color={color}>
       <S.PostItemWrapper>
@@ -35,7 +35,7 @@ const PostItem = ({
 PostItem.propTypes = {
   slug: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  category: PropTypes.string,
   date: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
