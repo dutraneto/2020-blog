@@ -115,8 +115,7 @@ btn.addEventListener("click", function() {
 
 ### Código escrito no CodePen.io
 
-<p data-height="265" data-theme-id="dark" data-slug-hash="mjVjpX" data-default-tab="js,result" data-user="dutraneto" data-pen-title="AJAX Bible STARTER" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/dutraneto/pen/mjVjpX/">AJAX Bible STARTER</a> by José Dutra M Neto (<a href="https://codepen.io/dutraneto">@dutraneto</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/dutraneto/pen/mjVjpX
 
 ## Conclusão
 

@@ -10,7 +10,7 @@ export const PostHeader = styled.header`
 export const PostTitle = styled.h1`
   font-size: 4rem;
   font-weight: 700;
-  padding: 0 1.4rem;
+  padding: 0;
   margin: 1rem auto;
   color: ${props => props.color};
 `
@@ -18,13 +18,13 @@ export const PostTitle = styled.h1`
 export const PostDescription = styled.h2`
   font-size: 2rem;
   font-weight: 200;
-  padding: 0 1.4rem;
+  padding: 0;
 `
 
 export const PostDate = styled.p`
   font-size: 1.1rem;
   font-weight: 100;
-  padding: 0 1.4rem;
+  padding: 0;
   color: ${props => props.color};
 `
 
@@ -32,6 +32,7 @@ export const MainContent = styled.section`
   margin: auto;
   max-width: 70rem;
   padding: 2rem 5rem;
+  overflow: hidden;
 
   p,
   h1,
@@ -48,7 +49,7 @@ export const MainContent = styled.section`
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: 0.069rem;
-    padding: 0 1.4rem;
+    padding: 0;
   }
 
   p {
@@ -91,7 +92,7 @@ export const MainContent = styled.section`
   }
 
   iframe {
-    padding: 0 1.6rem 1.6rem;
+    padding: 0;
     width: 100%;
   }
 
