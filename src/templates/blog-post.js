@@ -18,7 +18,7 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO title={post.frontmatter.title}></SEO>
       <S.PostHeader>
         <S.PostDate color={post.frontmatter.color}>
-          {post.frontmatter.date} &bull; {post.timeToRead} min to reading
+          {post.frontmatter.date} &bull; {post.timeToRead} min to read
         </S.PostDate>
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>

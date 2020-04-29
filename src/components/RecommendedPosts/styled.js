@@ -1,12 +1,13 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { lighten } from "polished"
 
 export const RecommendedWrapper = styled.section`
   border-bottom: 2px dashed var(--color-green);
   border-top: 2px dashed var(--color-green);
   background: transparent;
   display: flex;
-  margin: auto;
+  justify-content: space-between;
   width: 100%;
   border-left: 2px dashed var(--color-green);
 `
@@ -14,23 +15,14 @@ export const RecommendedWrapper = styled.section`
 export const RecommendedLink = styled(Link)`
   align-items: center;
   background: transparent;
-color: ${props => props.color};
+  color: ${props => props.color};
   display: flex;
   padding: 3rem;
   text-decoration: none;
-  transition: background 0.5s;
-  width: 50%;
+  transition: color 0.5s;
 
-  /* &:hover {
-    background: ${props => props.color};
-  } */
-
-  &.previous {
-    border-right: 2px dashed var(--color-green);
-  }
-
-  &.next {
-    justify-content: flex-end;
+  &:hover {
+    color: ${props => props.color && lighten(0.1, props.color)};
   }
 
   &.previous:before {

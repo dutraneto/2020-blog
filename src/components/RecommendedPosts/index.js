@@ -1,13 +1,14 @@
 import React from "react"
-// import propTypes from "prop-types"
+import PropTypes from "prop-types"
 import * as S from "./styled"
 
 const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
+    {console.log(previous, next)}
     {previous && (
       <S.RecommendedLink
         to={previous.fields.slug}
-        className={previous}
+        className="previous"
         color={previous.frontmatter.color}
       >
         {previous.frontmatter.title}
@@ -16,7 +17,7 @@ const RecommendedPosts = ({ next, previous }) => (
     {next && (
       <S.RecommendedLink
         to={next.fields.slug}
-        className={next}
+        className="next"
         color={next.frontmatter.color}
       >
         {next.frontmatter.title}
@@ -25,25 +26,25 @@ const RecommendedPosts = ({ next, previous }) => (
   </S.RecommendedWrapper>
 )
 
-// RecommendedPosts.propTypes = {
-//   next: propTypes.shape({
-//     frontmatter: propTypes.shape({
-//       title: propTypes.String.isRequired,
-//       color: propTypes.String.isRequired,
-//     }),
-//     fields: propTypes.shape({
-//       slug: propTypes.String.isRequired,
-//     }),
-//   }),
-//   previous: propTypes.shape({
-//     frontmatter: propTypes.shape({
-//       title: propTypes.String.isRequired,
-//       color: propTypes.String.isRequired,
-//     }),
-//     fields: propTypes.shape({
-//       slug: propTypes.String.isRequired,
-//     }),
-//   }),
-// }
+RecommendedPosts.propTypes = {
+  next: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    }),
+    fields: PropTypes.shape({
+      slug: PropTypes.string.isRequired,
+    }),
+  }),
+  previous: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    }),
+    fields: PropTypes.shape({
+      slug: PropTypes.string.isRequired,
+    }),
+  }),
+}
 
 export default RecommendedPosts

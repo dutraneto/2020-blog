@@ -14,7 +14,7 @@ Nesse rápido post nós iremos aprender a forma mais correta de se utilizar a ta
 
 O poder do HTML5 nos trouxe a facilidade de servir conteúdo de vídeo sem a necessidade de usar Flash 🙏🏽.
 
-Um ponto importante é que podemos inserir uma imagem de fallback caso o vídeo não seja por algum motivo carregado por algum motivo particular do seu browser.
+Um ponto importante é que podemos inserir uma imagem de fallback caso o vídeo não seja carregado por algum motivo particular do seu browser.
 
 ### Utilizando a tag video
 
@@ -76,21 +76,6 @@ Um ponto importante é que podemos inserir uma imagem de fallback caso o vídeo 
   position: relative;
 }
 ```
-
-### Resultado
-
-<div class="homepage-hero-module">
-    <div class="video-container">
-        <div class="filter"></div>
-        <video controls loop class="fillWidth">
-            <source src="assets/img/vid-post/Travaho.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="assets/img/vid-post/Travaho.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-        <div class="poster hidden">
-            <img src="assets/img/vid-post/Travaho.jpg" alt="image fallback">
-        </div>
-    </div>
-</div>
 
 ## Conclusão
 
