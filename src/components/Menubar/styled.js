@@ -10,7 +10,8 @@ export const MenuBarWrapper = styled.aside`
   justify-content: space-between;
   position: fixed;
   right: 0;
-  width: 3.75rem;
+  width: 5vw;
+  max-width: 3.75rem;
   background: var(--color-background);
   border-left: 2px dashed var(--color-green);
 `

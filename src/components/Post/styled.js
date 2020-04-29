@@ -3,7 +3,8 @@ import styled from "styled-components"
 export const PostHeader = styled.header`
   color: var(--color-white);
   margin: auto;
-  max-width: 70rem;
+  width: 46.1rem;
+  max-width: 79vw;
   padding: 5rem 5rem 0;
 `
 
@@ -30,9 +31,14 @@ export const PostDate = styled.p`
 
 export const MainContent = styled.section`
   margin: auto;
-  max-width: 70rem;
+  width: 46.1rem;
+  max-width: 79vw;
   padding: 2rem 5rem;
-  overflow: hidden;
+
+  .gatsby-highlight {
+    border: 1px solid ${props => props.color};
+    padding: 1.6rem 0 !important;
+  }
 
   p,
   h1,

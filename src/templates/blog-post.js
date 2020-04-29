@@ -7,15 +7,18 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
 import * as S from "../components/Post/styled"
+import RecommendedPosts from "../components/RecommendedPosts"
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
+  const next = pageContext.nextPost
+  const previous = pageContext.previousPost
   return (
     <Layout>
       <SEO title={post.frontmatter.title}></SEO>
       <S.PostHeader>
         <S.PostDate color={post.frontmatter.color}>
-          {post.frontmatter.date} &bull; {post.frontmatter.timeToRead} reading
+          {post.frontmatter.date} &bull; {post.timeToRead} min to reading
         </S.PostDate>
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
@@ -23,6 +26,7 @@ const BlogPost = ({ data }) => {
       <S.MainContent color={post.frontmatter.color}>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
+      <RecommendedPosts next={next} previous={previous} />
     </Layout>
   )
 }

@@ -81,4 +81,4 @@ When you use the value **multiply** in _mix-blend-mode:multiply;_ that element i
 
 ## Conclusion
 
-Unfortunately the **mix-blend-mode** property isn't [supported as well](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode), but you still can use it with a fallback color in addition.
+Unfortunately the **mix-blend-mode** property isn't [supported so well](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode), but you still can use it with a fallback color in addition.
