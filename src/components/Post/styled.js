@@ -9,7 +9,8 @@ export const PostHeader = styled.header`
 `
 
 export const PostTitle = styled.h1`
-  font-size: 4rem;
+  font-family: "Monda";
+  font-size: 3.4375rem;
   font-weight: 700;
   padding: 0;
   margin: 1rem auto;
