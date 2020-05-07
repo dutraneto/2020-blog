@@ -1,3 +1,8 @@
+require("dotenv").config() // for ALGOLIA
+
+// Import queries for Algolia
+const queries = require("./src/utils/algolia-queries")
+
 module.exports = {
   siteMetadata: {
     author: `José Dutra`,
@@ -13,10 +18,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Monda\:700` // you can also specify font weights and styles
+          `Monda\:700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -80,6 +85,17 @@ module.exports = {
           "gatsby-remark-lazy-load",
           "gatsby-remark-prismjs",
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-algolia-search`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+        queries,
+        chunkSize: 10000, // default: 1000
+        enablePartialUpdates: true, // default: false
       },
     },
   ],
