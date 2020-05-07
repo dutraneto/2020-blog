@@ -13,17 +13,17 @@ export const MenuLinksItem = styled.li`
   padding: 0.5rem 0;
 
   .active {
-    color: var(--color-green);
+    color: var(--color-white);
   }
 `
 
 export const MenuLinksLink = styled(Link)`
-  color: var(--color-white);
+  color: #626068;
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: var(--color-green);
+    color: var(--color-white);
     font-weight: 300;
   }
 `

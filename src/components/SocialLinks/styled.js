@@ -14,12 +14,12 @@ export const SocialLinksList = styled.ul`
 export const SocialLinksItem = styled.li``
 
 export const SocialLinksLink = styled.a`
-  color: var(--color-white);
+  color: #626068;
   transition: color 0.3s;
   text-decoration: none;
 
   &:hover {
-    color: var(--color-green);
+    color: var(--color-white);
   }
 `
 

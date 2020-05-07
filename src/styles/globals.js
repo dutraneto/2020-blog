@@ -4,8 +4,11 @@ const GlobalStyles = createGlobalStyle`
 
     :root {
         --color-white: #FFFFFF;
-        --color-green: #15b04b;
-        --color-background: #161716;
+        --color-green: #626068;
+        /* --color-background: #161716; */
+        --color-background: #262235;
+        --color-background-menu: #171420;
+        --color-background-sidebar: #24192f;
     }
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
