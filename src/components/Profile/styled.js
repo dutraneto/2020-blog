@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import media from "styled-media-query"
+
 import { Link } from "gatsby"
 
 export const ProfileWrapper = styled.section`
@@ -10,10 +12,17 @@ export const ProfileWrapper = styled.section`
 export const ProfileLink = styled(Link)`
   color: var(--color-white);
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 1s !important;
+
+  ${media.lessThan("large")`
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+  `}
 
   &:hover {
-    /* color: var(--color-green); */
+    color: var(--color-grey);
     background: linear-gradient(
       53.13deg,
       #ffd33d 0,
@@ -32,16 +41,20 @@ export const ProfileAuthor = styled.h1`
   font-size: 1.6rem;
   margin: 1rem auto 0;
   text-decoration: none;
+
+  ${media.lessThan("large")`
+    font-size: 1.2rem;
+    margin: 0 0 0 10px;
+  `}
 `
 
 export const ProfilePosition = styled.small`
   display: block;
   font-size: 14px;
   font-weight: 300;
-`
 
-export const ProfileDescription = styled.p`
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.4;
+  ${media.lessThan("large")`
+    font-size: 0.8rem;
+    margin: 0.2rem 0 0 10px;
+  `}
 `

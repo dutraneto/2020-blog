@@ -21,9 +21,13 @@ const Profile = () => {
     <S.ProfileWrapper>
       <S.ProfileLink>
         <Avatar />
-        <S.ProfileAuthor>{data.site.siteMetadata.author}</S.ProfileAuthor>
+        <div>
+          <S.ProfileAuthor>{data.site.siteMetadata.author}</S.ProfileAuthor>
+          <S.ProfilePosition>
+            {data.site.siteMetadata.position}
+          </S.ProfilePosition>
+        </div>
       </S.ProfileLink>
-      <S.ProfilePosition>{data.site.siteMetadata.position}</S.ProfilePosition>
     </S.ProfileWrapper>
   )
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 import { Link } from "gatsby"
 
@@ -7,6 +8,11 @@ export const MenuLinksWrapper = styled.nav``
 export const MenuLinksList = styled.ul`
   font-size: 1.2rem;
   font-weight: 300;
+
+  ${media.lessThan("large")`
+    display: flex;
+    margin-left: 1rem;
+  `}
 `
 
 export const MenuLinksItem = styled.li`
@@ -15,6 +21,10 @@ export const MenuLinksItem = styled.li`
   .active {
     color: var(--color-white);
   }
+
+  ${media.lessThan("large")`
+      margin-left: 1rem;
+  `}
 `
 
 export const MenuLinksLink = styled(Link)`

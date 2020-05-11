@@ -1,15 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
-
-    :root {
-        --color-white: #FFFFFF;
-        --color-green: #626068;
-        /* --color-background: #161716; */
-        --color-background: #262235;
-        --color-background-menu: #171420;
-        --color-background-sidebar: #24192f;
-    }
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -36,6 +27,11 @@ const GlobalStyles = createGlobalStyle`
         display: block;
     }
     body {
+        --color-white: #FFFFFF;
+        --color-grey: #626068;
+        --color-background: #262235;
+        --color-background-menu: #171420;
+        --color-background-sidebar: #24192f;
         line-height: 1;
     }
     ol, ul {
@@ -58,6 +54,16 @@ const GlobalStyles = createGlobalStyle`
         font-size: 100%;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
       }
+
+    body.light {
+        --color-white: #FFFFFF;
+        --color-grey: #626068;
+        --color-background: #262235;
+        --color-background-menu: #171420;
+        --color-background-sidebar: #24192f;
+        --color1: #1e1527;
+        --color2: #2a1e37;
+    }
 `
 
 export default GlobalStyles

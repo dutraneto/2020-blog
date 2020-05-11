@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 import { lighten } from "polished"
 
 export const RecommendedWrapper = styled.section`
-  border-bottom: 2px dashed var(--color-green);
-  border-top: 2px dashed var(--color-green);
+  border-bottom: 2px dashed var(--color-grey);
+  border-top: 2px dashed var(--color-grey);
   background: transparent;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-left: 2px dashed var(--color-green);
+  border-left: 2px dashed var(--color-grey);
 `
 
 export const RecommendedLink = styled(Link)`

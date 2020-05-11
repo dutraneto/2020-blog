@@ -1,5 +1,4 @@
 import styled from "styled-components"
-
 import { Link } from "gatsby"
 
 export const MenuBarWrapper = styled.aside`
@@ -13,7 +12,7 @@ export const MenuBarWrapper = styled.aside`
   width: 5vw;
   max-width: 3.75rem;
   background: var(--color-background-menu);
-  border-left: 2px dashed var(--color-green);
+  border-left: 2px dashed var(--color-grey);
 `
 
 export const MenuBarGroup = styled.div`

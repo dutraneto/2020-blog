@@ -11,12 +11,12 @@ export const PaginationWrapper = styled.section`
     color: var(--color-white);
     text-decoration: none;
     transition: color 0.5s;
-    border: 2px dashed var(--color-green);
+    border: 2px dashed var(--color-grey);
     padding: 2rem 3rem;
     border-top: none;
 
     &:hover {
-      color: var(--color-green);
+      color: var(--color-grey);
     }
   }
 
