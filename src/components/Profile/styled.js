@@ -10,10 +10,21 @@ export const ProfileWrapper = styled.section`
 export const ProfileLink = styled(Link)`
   color: var(--color-white);
   text-decoration: none;
-  transition: color 0.5s;
+  transition: all 0.5s;
 
   &:hover {
-    color: var(--color-green);
+    /* color: var(--color-green); */
+    background: linear-gradient(
+      53.13deg,
+      #ffd33d 0,
+      #fb8532 19.02%,
+      #ea4a5a 37.19%,
+      #8a63d2 56.92%,
+      #2188ff 79.93%,
+      #34d058 100%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 `
 
