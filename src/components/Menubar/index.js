@@ -8,12 +8,26 @@ import { ArrowUp } from "@styled-icons/feather/ArrowUp"
 const MenuBar = () => (
   <S.MenuBarWrapper>
     <S.MenuBarGroup>
-      <S.MenuBarLink to="/" title="Go back to home">
+      <S.MenuBarLink
+        to="/"
+        cover
+        direction="right"
+        bg="#262235"
+        duration={0.6}
+        title="Go back to home"
+      >
         <S.MenuBarItem>
           <Home />
         </S.MenuBarItem>
       </S.MenuBarLink>
-      <S.MenuBarLink to="/search/" title="Search">
+      <S.MenuBarLink
+        to="/search/"
+        cover
+        direction="right"
+        bg="#262235"
+        duration={0.6}
+        title="Search"
+      >
         <S.MenuBarItem>
           <Search />
         </S.MenuBarItem>

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { lighten } from "polished"
 
 export const RecommendedWrapper = styled.section`
@@ -12,7 +12,7 @@ export const RecommendedWrapper = styled.section`
   border-left: 2px dashed var(--color-grey);
 `
 
-export const RecommendedLink = styled(Link)`
+export const RecommendedLink = styled(AniLink)`
   align-items: center;
   background: transparent;
   color: ${props => props.color};

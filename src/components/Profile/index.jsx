@@ -19,7 +19,7 @@ const Profile = () => {
   `)
   return (
     <S.ProfileWrapper>
-      <S.ProfileLink>
+      <S.ProfileLink to="/" cover direction="left" bg="#262235" duration={0.6}>
         <Avatar />
         <div>
           <S.ProfileAuthor>{data.site.siteMetadata.author}</S.ProfileAuthor>

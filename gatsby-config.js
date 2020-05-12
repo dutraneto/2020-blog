@@ -9,6 +9,7 @@ module.exports = {
     position: `Frontend Developer`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-styled-components`,
     },

@@ -14,7 +14,14 @@ const PostItem = ({
 }) => {
   const TagIcon = category === "Misc" ? Icons.Blog : Icons[category]
   return (
-    <S.PostItemLink to={slug} color={color}>
+    <S.PostItemLink
+      cover
+      direction="right"
+      bg="#262235"
+      duration={0.6}
+      to={slug}
+      color={color}
+    >
       <S.PostItemWrapper>
         <S.PostItemTag color={color}>
           <TagIcon />
