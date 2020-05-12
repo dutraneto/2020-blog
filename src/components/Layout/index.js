@@ -16,9 +16,8 @@ const Layout = ({ children }) => {
         <Sidebar />
       </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
-      <TransitionPortal level="top">
-        <MenuBar />
-      </TransitionPortal>
+
+      <MenuBar />
     </S.LayoutWrapper>
   )
 }

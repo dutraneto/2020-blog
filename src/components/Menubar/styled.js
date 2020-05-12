@@ -17,12 +17,13 @@ export const MenuBarWrapper = styled.aside`
   border-left: 2px dashed var(--color-grey);
 
   ${media.lessThan("large")`
+    bottom: 10%;
+    position: initial !important;
     height: auto;
     flex-direction: row;
     width: 100%;
     max-width: 100%;
-    position: initial;
-    border: none:
+    border: none;
     border-top: 2px dashed var(--color-grey);
   `}
 `
