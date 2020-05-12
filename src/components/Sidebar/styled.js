@@ -15,14 +15,15 @@ export const SidebarWrapper = styled.aside`
   max-width: 13rem;
   border-radius: 50px;
   box-shadow: -5px 5px 0px #1e1527, 5px -5px 0px #2a1e37;
+  z-index: 999;
 
   ${media.lessThan("large")`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     height: auto;
-    padding: 1rem 2rem;
-    width: 100%;
+    padding: 1rem;
+    width: 100vw;
     max-width: 100%;
     margin: 0;
     border-radius: 0;

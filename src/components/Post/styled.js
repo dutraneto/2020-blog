@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const PostHeader = styled.header`
   color: var(--color-white);
@@ -6,6 +7,18 @@ export const PostHeader = styled.header`
   width: 46.1rem;
   max-width: 79vw;
   padding: 5rem 5rem 0;
+
+  ${media.lessThan("medium")`
+    padding: 5rem 2rem 3rem 2rem;
+    width: 100%;
+    max-width: 95vw;
+    margin: 0;
+  `}
+
+  ${media.lessThan("small")`
+    padding-left: 1rem;
+    padding-right: 1rem;
+  `}
 `
 
 export const PostTitle = styled.h1`
@@ -15,6 +28,10 @@ export const PostTitle = styled.h1`
   padding: 0;
   margin: 1rem auto;
   color: ${props => props.color};
+
+  ${media.lessThan("small")`
+    font-size: 2.8rem;
+  `}
 `
 
 export const PostDescription = styled.h2`
@@ -35,6 +52,19 @@ export const MainContent = styled.section`
   width: 46.1rem;
   max-width: 79vw;
   padding: 2rem 5rem;
+
+  ${media.lessThan("medium")`
+    width: 100%;
+    max-width: 95vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+  `}
+
+  ${media.lessThan("small")`
+    padding-left: 1rem;
+    padding-right: 1rem;
+  `}
 
   .gatsby-highlight {
     border: 1px solid ${props => props.color};

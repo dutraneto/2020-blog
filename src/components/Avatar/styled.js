@@ -9,8 +9,8 @@ export const AvatarWrapper = styled.div`
   width: 5.625rem;
 
   ${media.lessThan("large")`
-    max-height: 2rem;
-    max-width: 2rem;
+    max-height: 2.5rem;
+    max-width: 2.5rem;
   `}
 `
 
@@ -22,8 +22,8 @@ export const Avatar = styled(Img)`
   margin-top: 0.25rem;
 
   ${media.lessThan("large")`
-    max-height: 2rem;
-    max-width: 2rem;
+    max-height: 2.5rem;
+    max-width: 2.5rem;
     margin-top: 0;
   `}
 `

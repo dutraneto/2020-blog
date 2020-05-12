@@ -1,10 +1,17 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const CommentsWrapper = styled.section`
   margin: auto;
   width: 46.1rem;
   max-width: 79vw;
   padding: 3rem 6.4rem 3rem;
+
+  ${media.lessThan("medium")`
+    width: 100%;
+    max-width: auto;
+    padding: 3rem 2rem;
+  `}
 
   iframe[src*="ads-iframe"] {
     display: none;

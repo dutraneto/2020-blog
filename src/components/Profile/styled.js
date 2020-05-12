@@ -22,7 +22,6 @@ export const ProfileLink = styled(Link)`
   `}
 
   &:hover {
-    color: var(--color-grey);
     background: linear-gradient(
       53.13deg,
       #ffd33d 0,
