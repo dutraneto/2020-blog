@@ -5,7 +5,7 @@ description: "Using the Blend Mode Property to fill text with background color"
 category: Css3
 color: "#1572B6"
 # tags: [css]
-# feature-img: "assets/img/img_post/lego.png"
+image: "/assets/images/yellow-rose.png"
 ---
 
 ## Introduction

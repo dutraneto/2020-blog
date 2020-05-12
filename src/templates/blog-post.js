@@ -16,7 +16,11 @@ const BlogPost = ({ data, pageContext }) => {
   const previous = pageContext.previousPost
   return (
     <Layout>
-      <SEO title={post.frontmatter.title}></SEO>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        image={post.frontmatter.image}
+      ></SEO>
       <S.PostHeader>
         <S.PostDate color={post.frontmatter.color}>
           {post.frontmatter.date} &bull; {post.timeToRead} min to read
@@ -49,6 +53,7 @@ export const query = graphql`
         description
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
         color
+        image
       }
       html
       timeToRead
