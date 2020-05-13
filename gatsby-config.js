@@ -48,8 +48,8 @@ module.exports = {
         name: `José Dutra Blog`,
         short_name: `dutraneto`,
         start_url: `/`,
-        background_color: `#262235`,
-        theme_color: `#262235`,
+        background_color: `#171420`,
+        theme_color: `#171420`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
