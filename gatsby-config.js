@@ -103,5 +103,6 @@ module.exports = {
         enablePartialUpdates: true, // default: false
       },
     },
+    `gatsby-plugin-netlify-cms`,
   ],
 }

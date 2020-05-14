@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: dutraneto/2020-blog
+  branch: master
+  site_domain: https://dutraneto-blog.netlify.app
+
+publish_mode: editorial_workflow
+media_folder: static/assets/images
+public_folder: /assets/images
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD hh:mm:ss",
+        }
+      - { label: "image", name: "thumbnail", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Css3", "Javascript", "Html5", "Python", "React"],
+        }
+      - {
+          label: "Color",
+          name: "color",
+          widget: "select",
+          options:
+            [
+              { label: "Css3", value: "#1572B6" },
+              { label: "Html5", value: "#E34F26" },
+              { label: "Python", value: "#3776AB" },
+              { label: "Javascript", value: "#F7DF1E" },
+              { label: "React", value: "#61DAFB" },
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
