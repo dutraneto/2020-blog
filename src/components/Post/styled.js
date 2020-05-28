@@ -68,7 +68,7 @@ export const MainContent = styled.section`
 
   .gatsby-highlight {
     border: 1px solid ${props => props.color};
-    padding: 1.6rem 0 !important;
+    padding: 0 !important;
   }
 
   p,
