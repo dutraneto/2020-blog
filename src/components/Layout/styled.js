@@ -9,7 +9,7 @@ export const LayoutWrapper = styled.section`
   `}
 `
 export const LayoutMain = styled.main`
-  background: var(--color-background);
+  background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
   min-height: 100vh;
   padding: 0 3.75rem 0 20rem;
   width: 100%;
