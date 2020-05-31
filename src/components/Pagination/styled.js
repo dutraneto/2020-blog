@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import media from "styled-media-query"
 
 export const PaginationWrapper = styled.section`
   display: flex;
@@ -23,5 +23,9 @@ export const PaginationWrapper = styled.section`
 
   p {
     padding: 2rem 3rem;
+
+    ${media.lessThan("large")`
+    padding: 2rem 1rem;
+  `}
   }
 `

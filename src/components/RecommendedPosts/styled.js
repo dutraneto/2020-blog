@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import media from "styled-media-query"
 import { lighten } from "polished"
 
 export const RecommendedWrapper = styled.section`
@@ -20,6 +21,14 @@ export const RecommendedLink = styled(AniLink)`
   padding: 3rem;
   text-decoration: none;
   transition: color 0.5s;
+
+  ${media.lessThan("large")`
+    padding: 3rem 1rem;
+  `}
+
+  ${media.lessThan("small")`
+    font-size: 14px;
+  `}
 
   &:hover {
     color: ${props => props.color && lighten(0.1, props.color)};

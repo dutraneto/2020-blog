@@ -21,20 +21,6 @@ export const ProfileLink = styled(AniLink)`
     align-content: center;
     text-align: left;
   `}
-
-  &:hover {
-    background: linear-gradient(
-      53.13deg,
-      #ffd33d 0,
-      #fb8532 19.02%,
-      #ea4a5a 37.19%,
-      #8a63d2 56.92%,
-      #2188ff 79.93%,
-      #34d058 100%
-    );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
 `
 
 export const ProfileAuthor = styled.h1`

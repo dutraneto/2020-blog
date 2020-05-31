@@ -32,6 +32,10 @@ export const PostItemWrapper = styled.section`
     border-bottom: 2px dashed ${props => props.color};
   }
 
+  ${media.lessThan("large")`
+    padding: 2rem 1rem;
+  `}
+
   ${media.lessThan("small")`
     padding-left: 0;
     padding-right: 1rem;
@@ -62,12 +66,13 @@ export const PostItemInfo = styled.div`
   margin-left: 1.5rem;
 
   ${media.lessThan("small")`
-    margin-left: 1rem;;
+    margin-left: 1rem;
   `}
 `
 
 export const PostItemDate = styled.time`
   font-size: 0.75rem;
+  z-index: 2;
 `
 
 export const PostItemTitle = styled.h1`

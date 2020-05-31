@@ -11,7 +11,7 @@ export const MenuLinksWrapper = styled.nav`
     flex-grow: 2;
   `}
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     display: none;
   `}
 `

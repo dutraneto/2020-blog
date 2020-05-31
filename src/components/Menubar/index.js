@@ -15,6 +15,7 @@ const MenuBar = () => (
         bg="#262235"
         duration={0.6}
         title="Go back to home"
+        activeClassName="active"
       >
         <S.MenuBarItem>
           <Home />
@@ -27,6 +28,7 @@ const MenuBar = () => (
         bg="#262235"
         duration={0.6}
         title="Search"
+        activeClassName="active"
       >
         <S.MenuBarItem>
           <Search />
@@ -34,7 +36,11 @@ const MenuBar = () => (
       </S.MenuBarLink>
     </S.MenuBarGroup>
     <S.MenuBarGroup>
-      <S.MenuBarItem title="Nav to top">
+      <S.MenuBarItem
+        to="#"
+        title="Nav to top"
+        onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
+      >
         <ArrowUp />
       </S.MenuBarItem>
     </S.MenuBarGroup>

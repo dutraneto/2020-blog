@@ -15,10 +15,10 @@ export const MenuBarWrapper = styled.aside`
   max-width: 3.75rem;
   background: var(--color-background-menu);
   border-left: 2px dashed var(--color-grey);
+  z-index: 99;
 
   ${media.lessThan("large")`
-    bottom: 10%;
-    position: initial !important;
+    bottom: 0%;
     height: auto;
     flex-direction: row;
     width: 100%;

@@ -3,14 +3,17 @@ import media from "styled-media-query"
 
 export const CommentsWrapper = styled.section`
   margin: auto;
-  width: 46.1rem;
-  max-width: 79vw;
-  padding: 3rem 6.4rem 3rem;
+  width: 45rem;
+  padding: 3rem;
 
   ${media.lessThan("medium")`
     width: 100%;
-    max-width: auto;
+    max-width: 92vw;
     padding: 3rem 2rem;
+  `}
+
+  ${media.lessThan("small")`
+    padding: 3rem 1rem;
   `}
 
   iframe[src*="ads-iframe"] {

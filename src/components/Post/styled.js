@@ -4,15 +4,18 @@ import media from "styled-media-query"
 export const PostHeader = styled.header`
   color: var(--color-white);
   margin: auto;
-  width: 46.1rem;
-  max-width: 79vw;
-  padding: 5rem 5rem 0;
+  width: 45rem;
+  padding: 5rem 5rem 0 0;
+
+  ${media.lessThan("large")`
+    padding-right: 0;
+  `}
 
   ${media.lessThan("medium")`
     padding: 5rem 2rem 3rem 2rem;
     width: 100%;
-    max-width: 95vw;
-    margin: 0;
+    max-width: 92vw;
+    margin: 0 auto;
   `}
 
   ${media.lessThan("small")`
@@ -25,7 +28,6 @@ export const PostTitle = styled.h1`
   font-family: "Monda";
   font-size: 3.4375rem;
   font-weight: 700;
-  padding: 0;
   margin: 1rem auto;
   color: ${props => props.color};
 
@@ -49,19 +51,21 @@ export const PostDate = styled.p`
 
 export const MainContent = styled.section`
   margin: auto;
-  width: 46.1rem;
-  max-width: 79vw;
-  padding: 2rem 5rem;
+  width: 45rem;
+  padding: 5rem 5rem 0 0;
+
+  ${media.lessThan("large")`
+    padding-right: 0;
+  `}
 
   ${media.lessThan("medium")`
     width: 100%;
-    max-width: 95vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    max-width: 92vw;
     margin: 0;
   `}
 
   ${media.lessThan("small")`
+    padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
   `}
