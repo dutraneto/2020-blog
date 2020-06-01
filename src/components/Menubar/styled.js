@@ -55,3 +55,11 @@ export const MenuBarItem = styled.span`
     color: var(--color-white);
   }
 `
+
+export const MenuBarGroupMobile = styled.div`
+  display: none;
+
+  ${media.lessThan("large")`
+    display: block;
+  `}
+`

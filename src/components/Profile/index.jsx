@@ -1,31 +1,19 @@
 import React from "react"
+import PropTypes from "prop-types"
 // import { StaticQuery, graphql } from "gatsby"
 // using useStaticQuery
-import { useStaticQuery, graphql } from "gatsby"
 import Avatar from "../Avatar/Avatar"
 // import styled
 import * as S from "./styled"
 
-const Profile = () => {
-  const data = useStaticQuery(graphql`
-    query MySiteMetadata {
-      site {
-        siteMetadata {
-          author
-          position
-        }
-      }
-    }
-  `)
+const Profile = ({ author, position, isMobileHeader }) => {
   return (
-    <S.ProfileWrapper>
+    <S.ProfileWrapper isMobileHeader={isMobileHeader}>
       <S.ProfileLink to="/" cover direction="left" bg="#262235" duration={0.6}>
         <Avatar />
         <div>
-          <S.ProfileAuthor>{data.site.siteMetadata.author}</S.ProfileAuthor>
-          <S.ProfilePosition>
-            {data.site.siteMetadata.position}
-          </S.ProfilePosition>
+          <S.ProfileAuthor>{author}</S.ProfileAuthor>
+          <S.ProfilePosition>{position}</S.ProfilePosition>
         </div>
       </S.ProfileLink>
     </S.ProfileWrapper>
@@ -74,4 +62,10 @@ const Profile = () => (
   />
 )
 */
+
+Profile.propTypes = {
+  author: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
+}
+
 export default Profile

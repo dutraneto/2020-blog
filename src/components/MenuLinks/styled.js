@@ -10,10 +10,6 @@ export const MenuLinksWrapper = styled.nav`
     justify-content: center;
     flex-grow: 2;
   `}
-
-  ${media.lessThan("large")`
-    display: none;
-  `}
 `
 
 export const MenuLinksList = styled.ul`
@@ -22,7 +18,8 @@ export const MenuLinksList = styled.ul`
 
   ${media.lessThan("large")`
     display: flex;
-    margin-left: 1rem;
+    flex-direction: column;
+    margin-left: 0;
   `}
 `
 
@@ -34,7 +31,7 @@ export const MenuLinksItem = styled.li`
   }
 
   ${media.lessThan("large")`
-      margin-left: 1rem;
+      margin-left: 0;
   `}
 `
 

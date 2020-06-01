@@ -6,8 +6,19 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const ProfileWrapper = styled.section`
   color: var(--color-white);
-  display: flex;
+  display: ${props => (props.isMobileHeader ? "none" : "flex")};
   flex-direction: column;
+
+  ${media.lessThan("large")`
+    align-items: flex-start;
+    box-shadow: -5px 5px 0px #1e1527, 5px -5px 0px #2a1e37;
+    display: ${props => (props.isMobileHeader ? "flex" : "none")};
+    padding: 1rem;
+    background: var(--color-background-sidebar);
+    right: 0;
+    top: 10px;
+    height: 50px;
+  `}
 `
 
 export const ProfileLink = styled(AniLink)`
@@ -17,6 +28,7 @@ export const ProfileLink = styled(AniLink)`
 
   ${media.lessThan("large")`
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
     align-content: center;
     text-align: left;
