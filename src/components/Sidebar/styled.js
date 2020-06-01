@@ -18,15 +18,22 @@ export const SidebarWrapper = styled.aside`
   z-index: 9;
 
   ${media.lessThan("large")`
-    right: 10px;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: auto;
+    position: relative;
+    right: 0;
+    top: 10px;
+    align-items: center;
     padding: 1rem;
-    width: 100%;
+    width: auto;
     margin: 0;
     border-radius: 0;
+    transform: ${props =>
+      props.isMenuOpen ? "translateX(0)" : "translateX(-100vw)"};
   `}
+`
+
+export const SidebarLinksContainer = styled.section`
+  width: 100%;
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: column;
 `
