@@ -61,7 +61,7 @@ export const MainContent = styled.section`
   ${media.lessThan("medium")`
     width: 100%;
     max-width: 92vw;
-    margin: 0;
+    margin: 0 auto;
   `}
 
   ${media.lessThan("small")`

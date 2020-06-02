@@ -16,6 +16,7 @@ export const SidebarWrapper = styled.aside`
   border-radius: 50px;
   box-shadow: -5px 5px 0px #1e1527, 5px -5px 0px #2a1e37;
   z-index: 9;
+  transition: transform 0.6s ease-in-out;
 
   ${media.lessThan("large")`
     position: relative;

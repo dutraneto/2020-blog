@@ -10,7 +10,7 @@ const RecommendedPosts = ({ next, previous }) => (
         to={previous.fields.slug}
         cover
         direction="left"
-        bg="#262235"
+        bg="#2a2139"
         duration={0.6}
         className="previous"
         color={previous.frontmatter.color}
@@ -23,7 +23,7 @@ const RecommendedPosts = ({ next, previous }) => (
         to={next.fields.slug}
         cover
         direction="right"
-        bg="#262235"
+        bg="#2a2139"
         duration={0.6}
         className="next"
         color={next.frontmatter.color}

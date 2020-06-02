@@ -17,7 +17,7 @@ const PostItem = ({
     <S.PostItemLink
       cover
       direction="right"
-      bg="#262235"
+      bg="#2a2139"
       duration={0.6}
       to={slug}
       color={color}

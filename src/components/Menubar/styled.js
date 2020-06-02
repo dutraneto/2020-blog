@@ -16,6 +16,7 @@ export const MenuBarWrapper = styled.aside`
   background: var(--color-background-menu);
   border-left: 2px dashed var(--color-grey);
   z-index: 99;
+  overflow: hidden;
 
   ${media.lessThan("large")`
     bottom: 0%;
@@ -25,6 +26,7 @@ export const MenuBarWrapper = styled.aside`
     max-width: 100%;
     border: none;
     border-top: 2px dashed var(--color-grey);
+    filter: opacity(0.95);
   `}
 `
 

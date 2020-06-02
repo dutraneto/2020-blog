@@ -17,7 +17,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           to="/"
           cover
           direction="right"
-          bg="#262235"
+          bg="#2a2139"
           duration={0.6}
           title="Go back to home"
           activeClassName="active"
@@ -30,7 +30,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           to="/search/"
           cover
           direction="right"
-          bg="#262235"
+          bg="#2a2139"
           duration={0.6}
           title="Search"
           activeClassName="active"

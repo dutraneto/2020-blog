@@ -50,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
         border-spacing: 0;
     }
     body {
-        background-color: var(--color-background);
+        background: #2a2139;
         font-size: 100%;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
       }
@@ -205,6 +205,9 @@ const GlobalStyles = createGlobalStyle`
      color: green;
  }
 
+ .gatsby-plugin-transition-link-portal {
+    height: 60px;
+ }
 `
 
 export default GlobalStyles

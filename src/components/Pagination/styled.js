@@ -25,7 +25,7 @@ export const PaginationWrapper = styled.section`
     padding: 2rem 3rem;
 
     ${media.lessThan("large")`
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 6rem 1rem;
   `}
   }
 `
