@@ -1,5 +1,5 @@
 require("dotenv").config() // for ALGOLIA
-
+console.log(process.env)
 // Import queries for Algolia
 const queries = require("./src/utils/algolia-queries")
 

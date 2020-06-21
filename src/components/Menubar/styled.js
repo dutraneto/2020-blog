@@ -56,6 +56,10 @@ export const MenuBarItem = styled.span`
   &:hover {
     color: var(--color-white);
   }
+
+  ${media.lessThan("small")`
+    padding-bottom: 1.5rem;
+  `}
 `
 
 export const MenuBarGroupMobile = styled.div`

@@ -8,6 +8,10 @@ const links = [
     url: "/about/",
   },
   {
+    label: "Works",
+    url: "/works/",
+  },
+  {
     label: "Lab",
     url: "/lab/",
   },

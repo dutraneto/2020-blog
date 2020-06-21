@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const SearchWrapper = styled.section`
   display: flex;
@@ -15,11 +16,15 @@ export const SearchWrapper = styled.section`
 
   .ais-SearchBox,
   .ais-Stats {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
   }
 
   .ais-SearchBox {
     padding-top: 6rem;
+
+    ${media.lessThan("small")`
+      padding-top: 3rem;
+    `}
   }
 
   .ais-Stats {
