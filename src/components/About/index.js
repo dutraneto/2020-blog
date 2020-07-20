@@ -29,7 +29,7 @@ const About = () => {
         activeClassName="active"
         title="Click it!"
       >
-        Please, ckick to visit my lab!
+        Please, click here to visit my lab!
       </S.PortfolioLink>
     </S.AboutWrapper>
   )
