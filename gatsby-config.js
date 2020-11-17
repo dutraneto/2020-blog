@@ -26,6 +26,7 @@ module.exports = {
         display: "swap",
       },
     },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

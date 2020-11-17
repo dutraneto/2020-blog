@@ -1,0 +1,16 @@
+[
+  {
+    "path": "https://github.com/dutraneto/2020-collabfide",
+    "date": "2020",
+    "title": "Collabofide",
+    "description": "Collabofide landing page",
+    "imageSrc": "collabofide.jpeg"
+  },
+  {
+    "path": "https://coe-ptsd.netlify.app",
+    "date": "2020",
+    "title": "COE-PTSD",
+    "description": "Centre of Excellence on Post Traumatic Stress Disorder",
+    "imageSrc": "coe-ptsd.png"
+  }
+]
