@@ -6,10 +6,6 @@ export const CardWorkList = styled.section`
   margin: auto;
   width: 45rem;
   padding: 5rem 0 0;
-  display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   ${media.lessThan("large")`
     padding-right: 0;
@@ -36,22 +32,19 @@ export const CardWorkLink = styled.a.attrs(props => ({
 }))`
   color: var(--color-white);
   text-decoration: none;
-  transition: color 0.5s;
-  margin-top: 1rem;
+  transition: all 0.4s;
   display: block;
-
-  &:not(:last-item) {
-    margin-bottom: 1rem;
-  }
+  /* padding: 1rem; */
 
   &:hover {
-    border: 1px solid #03edf9;
+    /* outline: 3px solid #03edf9; */
   }
 `
 
 export const CardWork = styled.article`
-  padding: 2rem;
-  min-height: 15rem;
+  /* padding: 2rem; */
+  /* min-height: 15rem; */
+  overflow: hidden;
   width: 100%;
   border-radius: 2px;
 `
@@ -59,8 +52,15 @@ export const CardWork = styled.article`
 export const Image = styled(Img).attrs(props => ({
   alt: props.title,
 }))`
-  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   margin-bottom: 20px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `
 
 export const Title = styled.h1`
