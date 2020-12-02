@@ -1,6 +1,6 @@
 ---
 date: 2019-05-21 18:38:38
-title: "How to Use the Mix Blend Mode Property in a trick way"
+title: "How to use the CSS Mix Blend Mode property"
 description: "Using the Blend Mode Property to fill text with background color"
 category: Css3
 color: "#1572B6"
