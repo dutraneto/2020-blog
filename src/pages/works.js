@@ -26,7 +26,6 @@ const worksJsonQuery = graphql`
 `
 
 const WorksPage = () => {
-  
   const data = useStaticQuery(worksJsonQuery)
   const content = data.allWorksJson.edges
 

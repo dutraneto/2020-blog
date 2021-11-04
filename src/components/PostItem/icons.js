@@ -7,7 +7,7 @@ const Icons = {
   Css3,
   Javascript,
   Python,
-  Blog
+  Blog,
 }
 
 export default Icons

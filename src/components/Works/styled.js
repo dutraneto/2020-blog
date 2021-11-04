@@ -4,8 +4,8 @@ import Img from "gatsby-image"
 
 export const CardWorkList = styled.section`
   margin: auto;
-  width: 45rem;
-  padding: 5rem 0 0;
+  /* width: 45rem; */
+  padding: 10rem;
 
   ${media.lessThan("large")`
     padding-right: 0;
@@ -24,29 +24,26 @@ export const CardWorkList = styled.section`
   `}
 `
 
+export const CardWork = styled.article`
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 3rem;
+  color: var(--color-white);
+  border: 1px solid red;
+  padding: 1rem;
+  overflow: hidden;
+`
+
 export const CardWorkLink = styled.a.attrs(props => ({
   href: props.href,
   title: props.title,
   target: "_blank",
   rel: "noopener noreferrer",
 }))`
-  color: var(--color-white);
   text-decoration: none;
   transition: all 0.4s;
   display: block;
-  /* padding: 1rem; */
-
-  &:hover {
-    /* outline: 3px solid #03edf9; */
-  }
-`
-
-export const CardWork = styled.article`
-  /* padding: 2rem; */
-  /* min-height: 15rem; */
-  overflow: hidden;
-  width: 100%;
-  border-radius: 2px;
+  margin-bottom: 2rem;
 `
 
 export const Image = styled(Img).attrs(props => ({
@@ -55,24 +52,24 @@ export const Image = styled(Img).attrs(props => ({
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin-bottom: 20px;
   transition: transform 0.2s;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 `
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 2.1rem;
+  margin-bottom: 0.5rem;
 `
 
 export const Text = styled.p`
-  font-size: 2rem;
+  font-size: 1.6rem;
 `
 
 export const DateTime = styled.time`
-  /* color: var(--secondaryColor); */
+  text-align: end;
   display: block;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;

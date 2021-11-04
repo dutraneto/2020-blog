@@ -38,14 +38,14 @@ const Works = props => {
     <S.CardWorkList>
       {content.map(({ node }) => {
         return (
-          <S.CardWorkLink key={node.id} href={node.path} title={node.title}>
-            <S.CardWork>
+          <S.CardWork key={node.id}>
+            <S.CardWorkLink href={node.path} title={node.title}>
               <WorksImg imageSrc={node.imageSrc} />
-              <S.DateTime>{node.date}</S.DateTime>
-              <S.Title>{node.title}</S.Title>
-              <S.Text>{node.description}</S.Text>
-            </S.CardWork>
-          </S.CardWorkLink>
+            </S.CardWorkLink>
+            <S.DateTime>{node.date}</S.DateTime>
+            <S.Title>{node.title}</S.Title>
+            <S.Text>{node.description}</S.Text>
+          </S.CardWork>
         )
       })}
     </S.CardWorkList>
